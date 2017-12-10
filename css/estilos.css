@@ -1,0 +1,134 @@
+ * {
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ .col {
+     width: 33.3333%;
+     min-height: 200px;
+     float: left;
+ }
+ 
+ .fila {
+     overflow: hidden;
+     width: 1200px;
+     height: 550px;
+     margin: auto;
+ }
+ 
+ #pasillo {
+     background: url("../img/pasillo-re-alargado.jpg") repeat-x;
+ }
+ 
+ #pasillo div {}
+ 
+ .tablero {
+     background-color: #fff;
+     padding-bottom: 50px;
+ }
+ 
+ .tablero p {
+     text-align: center
+ }
+ 
+ #reciclable,
+ #basura {
+     display: block;
+     margin: auto;
+ }
+ 
+ #puntos {
+     width: 70px;
+     height: 70px;
+     font-size: 45px;
+     border: solid 1px #000000;
+     padding: 10px 0 0 0;
+     text-align: center;
+     margin: auto;
+ }
+ 
+ #mensaje {
+     font-size: 60px;
+     width: 100%;
+     padding: 20px;
+     min-height: 200px;
+     text-align: center;
+     margin: auto;
+     margin-top: 70px;
+ }
+ 
+ .error {
+     color: red;
+ }
+ 
+ .correcto {
+     color: green;
+ }
+ 
+ #mensaje p {
+     font-family: 'Dekko', cursive;
+     line-height: 60px;
+ }
+ 
+ ul {
+     list-style: none;
+     overflow: auto;
+ }
+ 
+ li {
+     float: left;
+ }
+ 
+ #materiales {
+     width: 1200px;
+     margin: auto;
+     text-align: center;
+ }
+ 
+ h2 {
+     margin: 50px 0 20px 0;
+ }
+ 
+ #pie {
+     background-color: #9ee132;
+     padding: 0 20px 30px;
+     margin-top: 25px;
+ }
+ 
+ #pie div {
+     width: 1200px;
+     margin: auto;
+     overflow: hidden;
+ }
+ 
+ #pie ul {
+     list-style: none;
+ }
+ 
+ #pie li {
+     line-height: 40px;
+     float: left;
+     margin: 0 15px;
+ }
+ 
+ #pie h3 {
+     text-align: center;
+     padding: 10px;
+ }
+ 
+ #pie a {
+     padding: 10px;
+     background-color: #fff;
+     border-radius: 10px;
+     text-transform: uppercase;
+     color: #6e942b;
+     font-size: 13px;
+     text-decoration: none;
+ }
+ 
+ #pie a:hover {
+     background-color: #6e942b;
+     color: #fff;
+ }

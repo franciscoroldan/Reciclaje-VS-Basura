@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Basura vs Reciclabke - ¿Dónde tirar los deshechos?</title>
+
+</head>
+
+<body>
+    <div id="pasillo">
+        <div class="fila">
+            <!-- Columna para el tacho de basura -->
+            <div class="col">
+                <img src="img/tacho-basura-indicador.png" alt="" id="basura">
+            </div>
+            <!-- Mensajes y puntaje -->
+            <div class="col">
+                <div class="tablero">
+                    <div id="mensaje"></div>
+                    <p>Puntaje</p>
+                    <div id="puntos"> 0</div>
+                </div>
+            </div>
+            <!-- columna para el tacho reciclable -->
+            <div class="col">
+                <img src="img/tacho-reciclable-indicador.png" alt="" id="reciclable">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="materiales">
+        <h2>Lista de materiales <span class="cantidad"></span></h2>
+
+        <!-- Materiales -->
+        <ul>
+            <li><img src="img/r-envases-de-plastico.jpg" alt="" id="envases-de-plastico"></li>
+            <li><img src="img/r-aluminio.jpg" alt="" id="aluminio"></li>
+            <li><img src="img/b-envase-con-comida.jpg" alt="" id="envase-con-comida"></li>
+            <li><img src="img/r-bolsas-de-papel.jpg" alt="" id="bolsas-de-papel"></li>
+            <li><img src="img/b-biromes.jpg" alt="" id="biromes"></li>
+            <li><img src="img/r-botella-de-plastico.jpg" alt="" id="botella-de-plastico"></li>
+            <li><img src="img/r-botellas-de-vidrio.jpg" alt="" id="botellas-de-vidrio"></li>
+            <li><img src="img/r-bronce.jpg" alt="" id="bronce"></li>
+            <li><img src="img/r-cajas-de-huevo.jpg" alt="" id="cajas-de-huevo"></li>
+            <li><img src="img/b-carton-sucio.jpg" alt="" id="carton-sucio"></li>
+            <li><img src="img/r-cartulinas.jpg" alt="" id="cartulinas"></li>
+            <li><img src="img/r-cobre.jpg" alt="" id="cobres"></li>
+            <li><img src="img/r-desodorante.jpg" alt="" id="desodorante"></li>
+            <li><img src="img/b-carton-sucio.jpg" alt="" id="carton-sucio"></li>
+            <li><img src="img/r-diarios-y-revistas.jpg" alt="" id="diarios-y-revistas"></li>
+            <li><img src="img/r-folletos.jpg" alt="" id="folletos"></li>
+            <li><img src="img/b-trapo-sucio.jpg" alt="" id="trapo-sucio"></li>
+            <li><img src="img/b-vidrio-roto.jpg" alt="" id="vidrio-roto"></li>
+            <li><img src="img/r-frasco-de-vidrio.jpg" alt="" id="frasco-de-vidrio"></li>
+            <li><img src="img/b-cd-dvd.jpg" alt="" id="cd-dvd"></li>
+            <li><img src="img/r-hierro.jpg" alt="" id="hierro"></li>
+            <li><img src="img/b-cd-dvd.jpg" alt="" id="cd-dvd"></li>
+            <li><img src="img/b-panales.jpg" alt="" id="panales"></li>
+            <li><img src="img/r-latas-limpias.jpg" alt="" id="latas-limpias">
+                <li><img src="img/r-llaves.jpg" alt="" id="llaves"></li>
+                <li><img src="img/r-manteles.jpg" alt="" id="manteles"></li>
+                <li><img src="img/b-papel-metalizado.jpg" alt="" id="papel-metalizado"></li>
+                <li><img src="img/b-papel-plastificado.jpg" alt="" id="papel-plastificado"></li>
+                <li><img src="img/r-ollas.jpg" alt="" id="ollas"></li>
+                <li><img src="img/r-papel-blanco.jpg" alt="" id="papel-blanco"></li>
+                <li><img src="img/b-servilleta-sucia.jpg" alt="" id="servilleta-sucia"></li>
+                <li><img src="img/r-papel-film.jpg" alt="" id="papel-film"></li>
+                <li><img src="img/r-plomo.jpg" alt="" id="plomo"></li>
+                <li><img src="img/r-potes-yogurth-limpios.jpg" alt="" id="potes-yogurth-limpios"></li>
+                <li><img src="img/b-papel-carbonico.jpg" alt="" id="papel-carbonico"></li>
+                <li><img src="img/b-papel-fotografico.jpg" alt="" id="papel-fotografico"></li>
+                <li><img src="img/r-radiografias.jpg" alt="" id="radiografias"></li>
+                <li><img src="img/r-ropa-usada.jpg" alt="" id="ropa-usada"></li>
+                <li><img src="img/b-vaso-encerado.jpg" alt="" id="vaso-encerado"></li>
+                <li><img src="img/r-sachet-limpio.jpg" alt="" id="sachet-limpio"></li>
+                <li><img src="img/b-envases-pintura.jpg" alt="" id="envases-pintura"></li>
+                <li><img src="img/b-espejos.jpg" alt="" id="espejos"></li>
+                <li><img src="img/r-silla-de-plastico.jpg" alt="" id="silla-de-plastico"></li>
+                <li><img src="img/b-papel-termal.jpg" alt="" id="papel-termal"></li>
+                <li><img src="img/b-pegamento.jpg" alt="" id="pegamento"></li>
+                <li><img src="img/r-tapas-aluminio.jpg" alt="" id="tapas-aluminio"></li>
+                <li><img src="img/r-tapas-frascos.jpg" alt="" id="tapas-frascos"></li>
+                <li><img src="img/r-tapitas.jpg" alt="" id="tapitas"></li>
+                <li><img src="img/b-restos-de-comida.jpg" alt="" id="restos-de-comida"></li>
+                <li><img src="img/r-telgopor-limpio.jpg" alt="" id="telgopor-limpio"></li>
+                <li><img src="img/r-trapo-limpio.jpg" alt="" id="trapo-limpio"></li>
+                <li><img src="img/r-vajilla-descartable.jpg" alt="" id="vajilla-descartable"></li>
+        </ul>
+    </div>
+    <div id="pie">
+        <div>
+            <h3>Para más información te dejamos estos links útiles</h3>
+            <ul>
+                <li><a href="http://www.buenosaires.gob.ar/ciudadverde/separacion/como-se-separan-los-residuos" target="_blank">Cómo se separan los residuos</a></li>
+                <li><a href="http://www.buenosaires.gob.ar/gobierno/basura-vs-reciclable" target="_blank">Basura vs reciclable</a></li>
+                <li><a href="http://www.buenosaires.gob.ar/ciudadverde/separacion/como-se-separan-los-residuos/otras-tipos-de-residuos" target="_blank">Otros tipos de residuos</a></li>
+                <li><a href="http://www.buenosaires.gob.ar/ciudadverde/separacion/como-se-separan-los-residuos/consejos-para-reducir" target="_blank">Consejos para reducir</a></li>
+                <li><a href="http://www.buenosaires.gob.ar/ciudadverde/separacion/como-se-separan-los-residuos/consejos-para-reutilizar" target="_blank">Consejos para reutilizar</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script>
+        // --- COMIENZA DÓNDE DEBE ESCRIBIR CÓDIGO EL ALUMNO
+
+        var ul = document.querySelector('ul');
+        for (var i = ul.children.length; i >= 0; i--) {
+            ul.appendChild(ul.children[Math.random() * i | 0]);
+        }
+
+        // Acción: Crear 2 arreglos (arrays) para hacer una lista de elementos que van a la basura y cuales a reciclable (considerar el nombre del ID de cada imagen)
+        var reciclables = ["envases-de-plastico", "aluminio", "bolsas-de-papel", "botella-de-plastico", "botellas-de-vidrio", "bronce", "cajas-de-huevo", "cartulinas", "cobre", "desodorante", "diarios-y-revistas", "envases-de-plastico", "folletos", "frasco-de-vidrio", "hierro", "latas-limpias", "llaves", "manteles", "ollas", "papel-blanco", "papel-film", "plomo", "potes-yogurth-limpios", "radiografias", "ropa-usada", "sachet-limpio", "silla-de-plastico", "tapas-aluminio", "tapas-frascos", "tapitas", "telgopor-limpio", "trapo-limpio", "vajilla-descartable"];
+        var basuras = ["biromes", "carton-sucio", "cd-dvd", "envase-con-comida", "envases-pintura", "espejos", "panales", "papel-carbonico", "papel-fotografico", "papel-metalizado", "papel-plastificado", "papel-termal", "pegamento", "restos-de-comida", "servilleta-sucia", "trapo-sucio", "vaso-encerado", "vidrio-roto"];
+
+        // Acción: Crear 2 variables para "seleccionar por ID", a la etiqueta que contenga los mensajes y a la otra para los puntos
+        var cMSJ = document.getElementById("mensaje");
+        var cPuntos = document.getElementById("puntos");
+
+        // Acción: Crear una variable para almacenar el puntaje, iniciariamos con "0" puntos
+        var puntos = 0;
+
+        //  Funciones predeterminadas -- NO TOCAR
+        // ====================================
+        // esta funcion previene el manejo predeterminado del elemento
+        function allowDrop(evento) {
+            evento.preventDefault();
+        }
+
+        // esta funcion le dice que información será transferida
+        function drag(evento) {
+            evento.dataTransfer.setData("text", evento.target.id);
+        }
+
+        // Cuando la información arrastrada es soltada, un evento ocurre
+        function drop(evento) {
+            evento.preventDefault();
+            var imagenDeshechoID = evento.dataTransfer.getData("text"); // almaceno el nombre del deshecho a transferir
+            var padre = evento.target; // el elemento que va a recibir esa información
+            // -- FIN DE NO TOCAR
+
+            // Acción: Redefinir la variable "padre" con el mismo nombre pero con el comando de JavaScript lo "selecciono por atributo" para que me devuelva el valor de su ID
+            padre = padre.getAttribute("id");
+
+            // COMIENZA EL CÓDIGO CONDICIONAL 
+            // =============================
+            // (Cada oración es una ayuda para que puedas completar el código ) 
+            // Acción: "SI (condicional)" el tacho es... (debes definir si el de basura o reciclable) 
+            if (padre === "basura") {
+                // Acción: chequear "SI (condicional)" el nombre del ID que almacena la imagen arrastrada EXISTE en el arreglo (array), es decir, los materiales que corresponden para ese tacho
+                if (basuras.indexOf(imagenDeshechoID) > -1) {
+                    evento.target.appendChild(document.getElementById(imagenDeshechoID)); // Permite que el elemento arrastrado se sume al codigo
+                    // Acción: Al elemento que contenga mensajes ("Definir un html o texto, con un mensaje") para decir que esta correcto
+                    cMSJ.innerText = "Correcto!";
+                    // Acción: SUMAR de a 1 punto ("forma corta") la variable definida que almacena cuantos puntos tenemos
+                    puntos++;
+                    // Acción: decirle al elemento, donde almacena los puntos, que se actualice asi el usuario lo puede ver ("Definir SOLO un contenido de texto")
+                    cPuntos.innerText = puntos;
+                } else { // Acción: "SINO" no se cumple la condición y no pertenece el deshecho al tacho que definimos entonces hará lo siguiente
+                    // Para que el deshecho no quede en la lista de materiales lo remuevo
+                    var deshecho = document.getElementById(imagenDeshechoID);
+                    deshecho.parentNode.removeChild(deshecho);
+                    // Acción: Al elemento que contenga mensajes ("Definir un html o texto, con un mensaje") para decir que esta incorrecto
+                    cMSJ.innerText = "Incorrecto!";
+                    // Acción: RESTAR de a 1 punto ("forma corta") la variable definida que almacena cuantos puntos tenemos
+                    puntos--;
+                    // Acción: decirle al elemento, donde almacena los puntos, que se actualice asi el usuario lo puede ver ("Definir SOLO un contenido de texto")
+                    cPuntos.innerText = puntos;
+                }
+            }
+            if (padre === "reciclable") {
+                // Acción: chequear "SI (condicional)" el nombre del ID que almacena la imagen arrastrada EXISTE en el arreglo (array), es decir, los materiales que corresponden para ese tacho
+                if (reciclables.indexOf(imagenDeshechoID) > -1) {
+                    evento.target.appendChild(document.getElementById(imagenDeshechoID)); // Permite que el elemento arrastrado se sume al codigo
+                    // Acción: Al elemento que contenga mensajes ("Definir un html o texto, con un mensaje") para decir que esta correcto
+                    cMSJ.innerText = "Correcto!";
+                    // Acción: SUMAR de a 1 punto ("forma corta") la variable definida que almacena cuantos puntos tenemos
+                    puntos++;
+                    // Acción: decirle al elemento, donde almacena los puntos, que se actualice asi el usuario lo puede ver ("Definir SOLO un contenido de texto")
+                    cPuntos.innerText = puntos;
+                } else { // Acción: "SINO" no se cumple la condición y no pertenece el deshecho al tacho que definimos entonces hará lo siguiente
+                    // Para que el deshecho no quede en la lista de materiales lo remuevo
+                    var deshecho = document.getElementById(imagenDeshechoID);
+                    deshecho.parentNode.removeChild(deshecho);
+                    // Acción: Al elemento que contenga mensajes ("Definir un html o texto, con un mensaje") para decir que esta incorrecto
+                    cMSJ.innerText = "Incorrecto!";
+                    // Acción: RESTAR de a 1 punto ("forma corta") la variable definida que almacena cuantos puntos tenemos
+                    puntos--;
+                    // Acción: decirle al elemento, donde almacena los puntos, que se actualice asi el usuario lo puede ver ("Definir SOLO un contenido de texto")
+                    cPuntos.innerText = puntos;
+                }
+            }
+            // --- FIN DE CÓDIGO DE ALUMNO
+            // NO TOCAR
+            // Cuento cuantos materiales hay 
+            var cantidadMateriales = $("#materiales img").length;
+            $("#materiales .cantidad").text("(" + cantidadMateriales + ")");
+            if ($("#materiales img").length == 0) {
+                $("#materiales h2").html("<h2>¡FIN DEL JUEGO!</h2><br><h3>Puntaje FINAL: " + puntos + " </h3>")
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script>
+        // no tocar
+        $(document).ready(function() {
+            // Nos permite que los tachos de basura, puedan aceptar elementos arrastrados con el mouse
+            $("#pasillo img").attr({
+                ondrop: "drop(event)",
+                ondragover: "allowDrop(event)"
+            });
+            // Permite que las imagenes de las basuras sean arrastrados por el mouse
+            $("#materiales img").attr({
+                draggable: "true",
+                ondragstart: "drag(event)"
+            });
+            // Cuento cuantos materiales hay 
+            var cantidadMateriales = $("#materiales img").length;
+            $("#materiales .cantidad").text("(" + cantidadMateriales + ")");
+
+        });
+        // Fin de no tocar
+    </script>
+</body>
+
+</html>
